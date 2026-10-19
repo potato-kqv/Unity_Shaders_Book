@@ -1,4 +1,7 @@
-﻿Shader "Unity Shaders Book/Chapter 10/Refraction" {
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Unity Shaders Book/Chapter 10/Refraction" {
 	Properties {
 		_Color ("Color Tint", Color) = (1, 1, 1, 1)
 		_RefractColor ("Refraction Color", Color) = (1, 1, 1, 1)
@@ -31,6 +34,7 @@
 			struct a2v {
 				float4 vertex : POSITION;
 				float3 normal : NORMAL;
+				float2 lightmapUV : TEXCOORD1;
 			};
 			
 			struct v2f {
@@ -39,23 +43,25 @@
 				fixed3 worldNormal : TEXCOORD1;
 				fixed3 worldViewDir : TEXCOORD2;
 				fixed3 worldRefr : TEXCOORD3;
-				SHADOW_COORDS(4)
+				// Match UNITY_LIGHT_ATTENUATION, including baked Shadowmask variants.
+				UNITY_SHADOW_COORDS(4)
 			};
 			
 			v2f vert(a2v v) {
 				v2f o;
-				o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+				UNITY_INITIALIZE_OUTPUT(v2f, o);
+				o.pos = UnityObjectToClipPos(v.vertex);
 				
 				o.worldNormal = UnityObjectToWorldNormal(v.normal);
 				
-				o.worldPos = mul(_Object2World, v.vertex).xyz;
+				o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 				
 				o.worldViewDir = UnityWorldSpaceViewDir(o.worldPos);
 				
 				// Compute the refract dir in world space
 				o.worldRefr = refract(-normalize(o.worldViewDir), normalize(o.worldNormal), _RefractRatio);
 				
-				TRANSFER_SHADOW(o);
+				UNITY_TRANSFER_SHADOW(o, v.lightmapUV);
 				
 				return o;
 			}

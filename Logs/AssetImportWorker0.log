@@ -1,0 +1,507 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.14f1 (d68c3f99a318) revision 14060607'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) CoreCountrySpecific' Language: 'zh' Physical Memory: 15540 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-19125" at "2026-10-17T08:54:14.5691336Z"
+Process architecture: x64
+Date: 2026-10-17T08:54:14Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 3672, path: "D:/unity/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-19125"
+[Licensing::IpcConnector] LicenseClient-19125 channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-19125-6000.3.14" at "2026-10-17T08:54:14.6179988Z"
+
+COMMAND LINE ARGUMENTS:
+D:\unity_engine\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/master/Project/Unity_Shaders_Book
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58096
+-licensingIpc
+LicenseClient-19125
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: D:/master/Project/Unity_Shaders_Book
+D:/master/Project/Unity_Shaders_Book
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [26776]  Target information:
+
+Player connection [26776]  * "[IP] 172.17.244.197 [Port] 0 [Flags] 2 [Guid] 4007080198 [EditorId] 4007080198 [Version] 1048832 [Id] WindowsEditor(7,独木成林) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26776]  * "[IP] 10.30.147.253 [Port] 0 [Flags] 2 [Guid] 4007080198 [EditorId] 4007080198 [Version] 1048832 [Id] WindowsEditor(7,独木成林) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26776]  * "[IP] 10.43.235.154 [Port] 0 [Flags] 2 [Guid] 4007080198 [EditorId] 4007080198 [Version] 1048832 [Id] WindowsEditor(7,独木成林) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26776] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [26776] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.14f1 (d68c3f99a318)
+[Subsystems] Discovering subsystems at path D:/unity_engine/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/master/Project/Unity_Shaders_Book/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28a0)
+    Vendor:   NVIDIA
+    VRAM:     7956 MB
+    Driver:   32.0.16.1714
+Initialize mono
+Mono path[0] = 'D:/unity_engine/Editor/Data/Managed'
+Mono path[1] = 'D:/unity_engine/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity_engine/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity_engine/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001309 seconds.
+- Loaded All Assemblies, in  0.438 seconds
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.399 seconds
+Domain Reload Profiling: 836ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (183ms)
+		LoadAssemblies (154ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (179ms)
+			TypeCache.Refresh (177ms)
+				TypeCache.ScanAssembly (164ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (399ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (363ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (47ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              c09c955e05aa4b6789675a2f155fe7ab
+  Correlation Id:          cad638a4450f316f921800f7f6aa4b24
+  External correlation Id: 7484369852101834763
+  Machine Id:              E8M9NOTV0FbvWdA4D7lQLIbxq0U=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-19125-6000.3.14" (connect: 0.00s, validation: 0.00s, handshake: 2.10s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-19125-6000.3.14-notifications" at "2026-10-17T08:54:16.7245932Z"
+[Licensing::Module] Licensing Background thread has ended after 2.16s
+[Licensing::Module] Licensing is initialized (took 0.60s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-KDVH-WUJP-EJC9-SNXT-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: 2026-10-27T09:12:43Z
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.001 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.444 seconds
+Domain Reload Profiling: 1444ms
+	BeginReloadAssembly (789ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (213ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (39ms)
+			TypeCache.Refresh (31ms)
+				TypeCache.ScanAssembly (22ms)
+			BuildScriptInfoCaches (6ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (444ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (349ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (215ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 844 unused Assets / (264.6 KB). Loaded Objects now: 1504.
+Memory consumption went from 82.0 MB to 81.8 MB.
+Total: 5.437700 ms (FindLiveObjects: 0.202600 ms CreateObjectMapping: 0.059700 ms MarkObjects: 4.822700 ms  DeleteObjects: 0.351700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6505.970900 seconds.
+  path: Assets/Scenes/Chapter16/Scene_16_3_1/LightingData.asset
+  artifactKey: Guid(dddcf3187dcff6f49a7252b39d81e717) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter16/Scene_16_3_1/LightingData.asset using Guid(dddcf3187dcff6f49a7252b39d81e717) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8ace4698b77b482096735529dfa2eb3') in 0.0991777 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.953746 seconds.
+  path: Assets/Scenes/Chapter16/Scene_16_3_2.unity
+  artifactKey: Guid(0ec6618b0bb5e4a9a9738d5b1fbe9389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter16/Scene_16_3_2.unity using Guid(0ec6618b0bb5e4a9a9738d5b1fbe9389) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0b7ed78b89dcfd88748bc5a632b3a9f') in 0.0006025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.785805 seconds.
+  path: Assets/Scenes/Chapter16/Scene_16_3_2
+  artifactKey: Guid(cc0b46efc286c0a49a1ddaeaf90ab96d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter16/Scene_16_3_2 using Guid(cc0b46efc286c0a49a1ddaeaf90ab96d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '246a241965cc721895abd84f8e3c7bc1') in 0.0085485 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.134195 seconds.
+  path: Assets/Scenes/Chapter17/Scene_17_1.unity
+  artifactKey: Guid(aa6a25124645a4e8a8ba4afb8baf58eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter17/Scene_17_1.unity using Guid(aa6a25124645a4e8a8ba4afb8baf58eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95a4477498ca4dd098bf8e54a44c35d6') in 0.0005104 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.109302 seconds.
+  path: Assets/Scenes/Chapter17/Scene_17_1/LightingData.asset
+  artifactKey: Guid(45e179bfe85ff3c46966e608ba0d7c28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter17/Scene_17_1/LightingData.asset using Guid(45e179bfe85ff3c46966e608ba0d7c28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'faa35d23b463929ea4645e626ba52c29') in 0.0097815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 640.433042 seconds.
+  path: Assets/Scenes/Chapter17/Scene_17_4.unity
+  artifactKey: Guid(9b6cb3dd28bda464f87888aaaf914188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter17/Scene_17_4.unity using Guid(9b6cb3dd28bda464f87888aaaf914188) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '779d24cce316c01000fab69c30f8aa8c') in 0.000549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.306287 seconds.
+  path: Assets/Scenes/Chapter17/Scene_17_4/LightingData.asset
+  artifactKey: Guid(65b330dc4ce119641bae16dcdb4abb33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter17/Scene_17_4/LightingData.asset using Guid(65b330dc4ce119641bae16dcdb4abb33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a48683805d48443b6aec230540241d3c') in 0.010033 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.091807 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_2.unity
+  artifactKey: Guid(0c00186466bfb4e86ba17ac28f8a7e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter18/Scene_18_2.unity using Guid(0c00186466bfb4e86ba17ac28f8a7e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49d25145552a36e91543057c76a1fecb') in 0.0004576 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.035160 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_2/ReflectionProbe-0.exr
+  artifactKey: Guid(b35d63a13f55dd1479cbc4badf1fe98c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_2/ReflectionProbe-0.exr using Guid(b35d63a13f55dd1479cbc4badf1fe98c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '78713b5da43bb17465cb38431fac25b6') in 0.0359406 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.984658 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3.unity
+  artifactKey: Guid(2d4d97f7142cb46f69f876833c992041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter18/Scene_18_3.unity using Guid(2d4d97f7142cb46f69f876833c992041) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd5ba018ac27d1d200c3cb40ea31cd12b') in 0.0004718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.208990 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3/ReflectionProbe-2.exr
+  artifactKey: Guid(00f47bf23f4585147a4c4711c9473f8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3/ReflectionProbe-2.exr using Guid(00f47bf23f4585147a4c4711c9473f8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '79117e7b811b39452621e5dffe816895') in 0.0137535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3
+  artifactKey: Guid(54e03faccf6bed2499a8c273bcc5b027) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3 using Guid(54e03faccf6bed2499a8c273bcc5b027) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd3be664ea4506a147b2c51075e3f9a8') in 0.0093695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3/LightingData.asset
+  artifactKey: Guid(d65c6942c718d744d877de6495a69cae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3/LightingData.asset using Guid(d65c6942c718d744d877de6495a69cae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4836feecdd64b36fb4cfb634878edffb') in 0.0114839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3/ReflectionProbe-0.exr
+  artifactKey: Guid(e7d5a3412446be04fa2d5af9f7b4113b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3/ReflectionProbe-0.exr using Guid(e7d5a3412446be04fa2d5af9f7b4113b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a48b32d83b0707a335042df42ececc8') in 0.0143967 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.151136 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3_2/ReflectionProbe-0.exr
+  artifactKey: Guid(b5d6c8fb9665cbc4e83b15b337787213) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3_2/ReflectionProbe-0.exr using Guid(b5d6c8fb9665cbc4e83b15b337787213) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '52bf12923317b402a58ff546fdb13f39') in 0.0108123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3_2/LightingData.asset
+  artifactKey: Guid(ae259a9b41451774db1aef4cacac6d85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3_2/LightingData.asset using Guid(ae259a9b41451774db1aef4cacac6d85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c3424d501ba016d91534daf68d19bfe') in 0.0096541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.897017 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_4_2_a
+  artifactKey: Guid(4c9bc65a08035d9429d1332d1f81e001) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_4_2_a using Guid(4c9bc65a08035d9429d1332d1f81e001) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd71f8f69b100acd05f60c7c76990b172') in 0.0094286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.213553 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_4_2_b
+  artifactKey: Guid(5e0680776622a18438e101320f17018d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_4_2_b using Guid(5e0680776622a18438e101320f17018d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '36c38900549df6a9a48008e87cb527a5') in 0.009172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1506.
+Memory consumption went from 82.0 MB to 82.0 MB.
+Total: 71.218700 ms (FindLiveObjects: 0.843400 ms CreateObjectMapping: 0.025600 ms MarkObjects: 70.341800 ms  DeleteObjects: 0.005500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1506.
+Memory consumption went from 81.1 MB to 81.1 MB.
+Total: 4.697200 ms (FindLiveObjects: 0.101400 ms CreateObjectMapping: 0.016700 ms MarkObjects: 4.574200 ms  DeleteObjects: 0.003500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 6204.898917 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3_2/ReflectionProbe-0.exr
+  artifactKey: Guid(b5d6c8fb9665cbc4e83b15b337787213) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3_2/ReflectionProbe-0.exr using Guid(b5d6c8fb9665cbc4e83b15b337787213) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'baaea7b516ad1af1d7a38b7de7b43a7f') in 0.0459193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.142782 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3_2/ReflectionProbe-2.exr
+  artifactKey: Guid(f744b109412baa541baa39900c5613a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3_2/ReflectionProbe-2.exr using Guid(f744b109412baa541baa39900c5613a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f328639d9efd1c967af0e0b3cac5e16f') in 0.0156134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3_2/ReflectionProbe-1.exr
+  artifactKey: Guid(4cdcb36a586c29e47a8271487d2be17f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3_2/ReflectionProbe-1.exr using Guid(4cdcb36a586c29e47a8271487d2be17f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ee52d9bbe2f7ce66dced5468402af5f') in 0.0129125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3/ReflectionProbe-3.exr
+  artifactKey: Guid(51de868c3c14bfb429ecd564b017616f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3/ReflectionProbe-3.exr using Guid(51de868c3c14bfb429ecd564b017616f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ac901db36e6e5bace79bf39708cd5ec8') in 0.0114062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1506.
+Memory consumption went from 82.0 MB to 82.0 MB.
+Total: 4.160900 ms (FindLiveObjects: 0.091100 ms CreateObjectMapping: 0.014900 ms MarkObjects: 4.050800 ms  DeleteObjects: 0.003600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  colorSpace: 1 -> 0
+========================================================================
+Received Import Request.
+  Time since last request: 87.444576 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_4_2_b/LightingData.asset
+  artifactKey: Guid(fa23f807e193bdd47870ad5148bc312a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_4_2_b/LightingData.asset using Guid(fa23f807e193bdd47870ad5148bc312a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5dfea34928301d99c6ae8c8254654775') in 0.0547843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1506.
+Memory consumption went from 82.0 MB to 82.0 MB.
+Total: 4.082400 ms (FindLiveObjects: 0.087500 ms CreateObjectMapping: 0.014400 ms MarkObjects: 3.976600 ms  DeleteObjects: 0.003000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1506.
+Memory consumption went from 82.0 MB to 82.0 MB.
+Total: 4.197000 ms (FindLiveObjects: 0.122600 ms CreateObjectMapping: 0.016500 ms MarkObjects: 4.053400 ms  DeleteObjects: 0.003400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  colorSpace: 1 -> 0
+========================================================================
+Received Import Request.
+  Time since last request: 54.098196 seconds.
+  path: Assets/Textures/Chapter18/circle.psd
+  artifactKey: Guid(300596a980eba42e285b20abdf98685a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Chapter18/circle.psd using Guid(300596a980eba42e285b20abdf98685a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3b35f67b332b60de868b983ede85900') in 0.158582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1509.
+Memory consumption went from 82.3 MB to 82.3 MB.
+Total: 4.325300 ms (FindLiveObjects: 0.087700 ms CreateObjectMapping: 0.015500 ms MarkObjects: 4.218900 ms  DeleteObjects: 0.002800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1509.
+Memory consumption went from 82.3 MB to 82.3 MB.
+Total: 4.470000 ms (FindLiveObjects: 0.092000 ms CreateObjectMapping: 0.013700 ms MarkObjects: 4.360900 ms  DeleteObjects: 0.003100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  colorSpace: 1 -> 0
+========================================================================
+Received Import Request.
+  Time since last request: 413.118000 seconds.
+  path: Assets/Scenes/Chapter18/Scene_18_3_2/LightingData.asset
+  artifactKey: Guid(ae259a9b41451774db1aef4cacac6d85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/Chapter18/Scene_18_3_2/LightingData.asset using Guid(ae259a9b41451774db1aef4cacac6d85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '82acddb9213c3e604363f01fe56d3e99') in 0.0697525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+

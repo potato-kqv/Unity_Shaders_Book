@@ -1,4 +1,7 @@
-﻿Shader "Unity Shaders Book/Common/Bumped Specular" {
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Unity Shaders Book/Common/Bumped Specular" {
 	Properties {
 		_Color ("Color Tint", Color) = (1, 1, 1, 1)
 		_MainTex ("Main Tex", 2D) = "white" {}
@@ -34,6 +37,7 @@
 			struct a2v {
 				float4 vertex : POSITION;
 				float3 normal : NORMAL;
+				float2 lightmapUV : TEXCOORD1;
 				float4 tangent : TANGENT;
 				float4 texcoord : TEXCOORD0;
 			};
@@ -44,19 +48,21 @@
 				float4 TtoW0 : TEXCOORD1;  
                 float4 TtoW1 : TEXCOORD2;  
                 float4 TtoW2 : TEXCOORD3; 
-				SHADOW_COORDS(4)
+				// Match UNITY_LIGHT_ATTENUATION, including baked Shadowmask variants.
+				UNITY_SHADOW_COORDS(4)
 			};
 			
 			v2f vert(a2v v) {
 			 	v2f o;
-			 	o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+				UNITY_INITIALIZE_OUTPUT(v2f, o);
+			 	o.pos = UnityObjectToClipPos(v.vertex);
 			 
 			 	o.uv.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
 			 	o.uv.zw = v.texcoord.xy * _BumpMap_ST.xy + _BumpMap_ST.zw;
 
 				TANGENT_SPACE_ROTATION;
 				
-				float3 worldPos = mul(_Object2World, v.vertex).xyz;  
+				float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;  
                 fixed3 worldNormal = UnityObjectToWorldNormal(v.normal);  
                 fixed3 worldTangent = UnityObjectToWorldDir(v.tangent.xyz);  
                 fixed3 worldBinormal = cross(worldNormal, worldTangent) * v.tangent.w; 
@@ -65,7 +71,7 @@
                 o.TtoW1 = float4(worldTangent.y, worldBinormal.y, worldNormal.y, worldPos.y);  
                 o.TtoW2 = float4(worldTangent.z, worldBinormal.z, worldNormal.z, worldPos.z);  
   				
-  				TRANSFER_SHADOW(o);
+  				UNITY_TRANSFER_SHADOW(o, v.lightmapUV);
 			 	
 			 	return o;
 			}
@@ -139,12 +145,12 @@
 			
 			v2f vert(a2v v) {
 			 	v2f o;
-			 	o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			 	o.pos = UnityObjectToClipPos(v.vertex);
 			 
 			 	o.uv.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
 			 	o.uv.zw = v.texcoord.xy * _BumpMap_ST.xy + _BumpMap_ST.zw;
 
-				float3 worldPos = mul(_Object2World, v.vertex).xyz;  
+				float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;  
                 fixed3 worldNormal = UnityObjectToWorldNormal(v.normal);  
                 fixed3 worldTangent = UnityObjectToWorldDir(v.tangent.xyz);  
                 fixed3 worldBinormal = cross(worldNormal, worldTangent) * v.tangent.w; 

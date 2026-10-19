@@ -1,0 +1,5 @@
+CHANGED D:\master\Project\Unity_Shaders_Book\Assets\Scenes\Chapter10\Scene_10_3_2.unity
+ADDED D:\master\Project\Unity_Shaders_Book\Assets\Scenes\Chapter10\Scene_10_3_2Settings.lighting
+ADDED D:\master\Project\Unity_Shaders_Book\Assets\Scenes\Chapter10\Scene_10_3_2Settings.lighting.meta
+ADDED D:\master\Project\Unity_Shaders_Book\Assets\Scenes\Chapter10\Scene_10_3_2\Capsule.mat
+ADDED D:\master\Project\Unity_Shaders_Book\Assets\Scenes\Chapter10\Scene_10_3_2\Capsule.mat.meta

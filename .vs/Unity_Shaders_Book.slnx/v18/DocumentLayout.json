@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\master\\Project\\Unity_Shaders_Book\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\master\\project\\unity_shaders_book\\assets\\shaders\\chapter18\\simpleblend.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\shaders\\chapter18\\simpleblend.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimpleBlend.shader",
+              "DocumentMoniker": "D:\\master\\Project\\Unity_Shaders_Book\\Assets\\Shaders\\Chapter18\\SimpleBlend.shader",
+              "RelativeDocumentMoniker": "Assets\\Shaders\\Chapter18\\SimpleBlend.shader",
+              "ToolTip": "D:\\master\\Project\\Unity_Shaders_Book\\Assets\\Shaders\\Chapter18\\SimpleBlend.shader",
+              "RelativeToolTip": "Assets\\Shaders\\Chapter18\\SimpleBlend.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-10-17T09:35:27.981Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

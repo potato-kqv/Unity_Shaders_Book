@@ -58,9 +58,11 @@ public class ProceduralTextureGeneration : MonoBehaviour {
 	#endregion
 
 	private Texture2D m_generatedTexture = null;
+	private Material m_boundMaterial;
+	private Texture m_originalTexture;
 
-	// Use this for initialization
-	void Start () {
+	// Regenerate after re-enabling the component or reloading scripts in the Editor.
+	void OnEnable () {
 		if (material == null) {
 			Renderer renderer = gameObject.GetComponent<Renderer>();
 			if (renderer == null) {
@@ -75,9 +77,53 @@ public class ProceduralTextureGeneration : MonoBehaviour {
 	}
 
 	private void _UpdateMaterial() {
-		if (material != null) {
-			m_generatedTexture = _GenerateProceduralTexture();
-			material.SetTexture("_MainTex", m_generatedTexture);
+		if (!isActiveAndEnabled) {
+			return;
+		}
+
+		if (material != m_boundMaterial) {
+			_ReleaseGeneratedTexture();
+		}
+		if (material == null) {
+			return;
+		}
+
+		if (m_boundMaterial == null) {
+			m_boundMaterial = material;
+			m_originalTexture = material.GetTexture("_MainTex");
+		}
+
+		Texture2D previousTexture = m_generatedTexture;
+		m_generatedTexture = _GenerateProceduralTexture();
+		m_generatedTexture.hideFlags = HideFlags.DontSave;
+		material.SetTexture("_MainTex", m_generatedTexture);
+		_DestroyGeneratedTexture(previousTexture);
+	}
+
+	void OnDisable() {
+		_ReleaseGeneratedTexture();
+	}
+
+	private void _ReleaseGeneratedTexture() {
+		// Restore only our own binding, preserving an externally assigned texture.
+		if (m_boundMaterial != null && m_generatedTexture != null &&
+			m_boundMaterial.GetTexture("_MainTex") == m_generatedTexture) {
+			m_boundMaterial.SetTexture("_MainTex", m_originalTexture);
+		}
+		_DestroyGeneratedTexture(m_generatedTexture);
+		m_generatedTexture = null;
+		m_boundMaterial = null;
+		m_originalTexture = null;
+	}
+
+	private void _DestroyGeneratedTexture(Texture2D texture) {
+		if (texture == null) {
+			return;
+		}
+		if (Application.isPlaying) {
+			Destroy(texture);
+		} else {
+			DestroyImmediate(texture);
 		}
 	}
 
